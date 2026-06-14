@@ -1,5 +1,5 @@
 ---
-description: Break work into small verifiable tasks with acceptance criteria and dependency ordering
+description: Break work into small verifiable tasks with acceptance criteria and dependency ordering 日本語トリガー: 「計画を立てて」「タスク分解」「作業を分けて」。
 ---
 
 Invoke the agent-skills:planning-and-task-breakdown skill.

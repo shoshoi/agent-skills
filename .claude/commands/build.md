@@ -1,5 +1,5 @@
 ---
-description: Implement tasks incrementally — build, test, verify, commit. Add "auto" to run the whole plan in one approved pass.
+description: Implement tasks incrementally — build, test, verify, commit. Add "auto" to run the whole plan in one approved pass. 日本語トリガー: 「実装して」「段階的にビルド」「タスクを進めて」。
 ---
 
 Invoke the agent-skills:incremental-implementation skill alongside agent-skills:test-driven-development.

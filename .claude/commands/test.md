@@ -1,5 +1,5 @@
 ---
-description: Run TDD workflow — write failing tests, implement, verify. For bugs, use the Prove-It pattern.
+description: Run TDD workflow — write failing tests, implement, verify. For bugs, use the Prove-It pattern. 日本語トリガー: 「TDD」「テストを書いて」「テスト駆動で」。
 ---
 
 Invoke the agent-skills:test-driven-development skill.

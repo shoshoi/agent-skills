@@ -15,7 +15,7 @@ if [ -f "$META_SKILL" ]; then
   CONTENT=$(cat "$META_SKILL")
   # Use jq to properly escape and construct valid JSON
   jq -cn \
-    --arg message "agent-skills loaded. Use the skill discovery flowchart to find the right skill for your task.
+    --arg message "agent-skills loaded. Respond to the user in Japanese (日本語) by default — see the Language / 言語 section below. Use the skill discovery flowchart to find the right skill for your task.
 
 $CONTENT" \
     '{priority: "IMPORTANT", message: $message}'

@@ -1,6 +1,6 @@
 ---
 name: security-auditor
-description: Security engineer focused on vulnerability detection, threat modeling, and secure coding practices. Use for security-focused code review, threat analysis, or hardening recommendations.
+description: Security engineer focused on vulnerability detection, threat modeling, and secure coding practices. Use for security-focused code review, threat analysis, or hardening recommendations. 日本語での起動例: 「セキュリティ監査」「脆弱性診断」「脅威モデリング」「ハードニング提案」。
 ---
 
 # Security Auditor

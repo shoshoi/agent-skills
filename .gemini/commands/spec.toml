@@ -1,6 +1,8 @@
-description = "Start spec-driven development — write a structured specification before writing code"
+description = "Start spec-driven development — write a structured specification before writing code 日本語トリガー: 「仕様を作る」「スペック駆動」「設計書から始めて」などの依頼時。"
 
 prompt = """
+ユーザーには日本語で応答してください（コードや識別子は元の言語のまま）。
+
 Invoke the spec-driven-development skill.
 
 Begin by understanding what the user wants to build. Ask clarifying questions about:

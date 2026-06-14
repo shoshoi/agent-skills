@@ -1,6 +1,8 @@
-description = "Break work into small verifiable tasks with acceptance criteria and dependency ordering"
+description = "Break work into small verifiable tasks with acceptance criteria and dependency ordering 日本語トリガー: 「計画を立てて」「タスク分解」「作業を分けて」などの依頼時。"
 
 prompt = """
+ユーザーには日本語で応答してください（コードや識別子は元の言語のまま）。
+
 Invoke the planning-and-task-breakdown skill.
 
 Read the existing spec (SPEC.md or equivalent) and the relevant codebase sections. Then:

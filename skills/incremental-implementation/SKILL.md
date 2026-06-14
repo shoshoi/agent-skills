@@ -1,6 +1,6 @@
 ---
 name: incremental-implementation
-description: Delivers changes incrementally. Use when implementing any feature or change that touches more than one file. Use when you're about to write a large amount of code at once, or when a task feels too big to land in one step.
+description: Delivers changes incrementally. Use when implementing any feature or change that touches more than one file. Use when you're about to write a large amount of code at once, or when a task feels too big to land in one step. 日本語トリガー: 「少しずつ実装」「段階的に実装」「インクリメンタルに」「大きい変更を分けて」などの依頼時。
 ---
 
 # Incremental Implementation

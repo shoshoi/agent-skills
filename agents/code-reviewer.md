@@ -1,6 +1,6 @@
 ---
 name: code-reviewer
-description: Senior code reviewer that evaluates changes across five dimensions — correctness, readability, architecture, security, and performance. Use for thorough code review before merge.
+description: Senior code reviewer that evaluates changes across five dimensions — correctness, readability, architecture, security, and performance. Use for thorough code review before merge. 日本語での起動例: 「コードレビューして」「マージ前レビュー」「5観点でレビュー」。
 ---
 
 # Senior Code Reviewer

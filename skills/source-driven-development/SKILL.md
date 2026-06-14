@@ -1,6 +1,6 @@
 ---
 name: source-driven-development
-description: Grounds every implementation decision in official documentation. Use when you want authoritative, source-cited code free from outdated patterns. Use when building with any framework or library where correctness matters.
+description: Grounds every implementation decision in official documentation. Use when you want authoritative, source-cited code free from outdated patterns. Use when building with any framework or library where correctness matters. 日本語トリガー: 「公式ドキュメントに基づいて」「一次情報で実装」「ソース準拠」「正確に実装」などの依頼時。
 ---
 
 # Source-Driven Development

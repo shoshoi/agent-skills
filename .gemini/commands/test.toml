@@ -1,6 +1,8 @@
-description = "Run TDD workflow — write failing tests, implement, verify. For bugs, use the Prove-It pattern."
+description = "Run TDD workflow — write failing tests, implement, verify. For bugs, use the Prove-It pattern. 日本語トリガー: 「TDD」「テストを書いて」「テスト駆動で」などの依頼時。"
 
 prompt = """
+ユーザーには日本語で応答してください（コードや識別子は元の言語のまま）。
+
 Invoke the test-driven-development skill.
 
 For new features:

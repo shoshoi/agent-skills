@@ -1,6 +1,8 @@
-description = "Conduct a five-axis code review — correctness, readability, architecture, security, performance"
+description = "Conduct a five-axis code review — correctness, readability, architecture, security, performance 日本語トリガー: 「コードレビュー」「5観点でレビュー」「PRを見て」などの依頼時。"
 
 prompt = """
+ユーザーには日本語で応答してください（コードや識別子は元の言語のまま）。
+
 Invoke the code-review-and-quality skill.
 
 Review the current changes (staged or recent commits) across all five axes:

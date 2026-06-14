@@ -1,6 +1,8 @@
-description = "Run a web performance audit via the web-performance-auditor persona"
+description = "Run a web performance audit via the web-performance-auditor persona 日本語トリガー: 「Web性能監査」「パフォーマンス監査」「表示速度を診て」などの依頼時。"
 
 prompt = """
+ユーザーには日本語で応答してください（コードや識別子は元の言語のまま）。
+
 /webperf targets web applications specifically. Do not use it for utility libraries, CLIs, or server-only code with no browser-facing output.
 
 ## Determine the mode

@@ -1,5 +1,5 @@
 ---
-description: Start spec-driven development — write a structured specification before writing code
+description: Start spec-driven development — write a structured specification before writing code 日本語トリガー: 「仕様を作る」「スペック駆動」「設計書から始めて」。
 ---
 
 Invoke the agent-skills:spec-driven-development skill.

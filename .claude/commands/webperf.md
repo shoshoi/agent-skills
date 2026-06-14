@@ -1,5 +1,5 @@
 ---
-description: Run a web performance audit via the web-performance-auditor persona
+description: Run a web performance audit via the web-performance-auditor persona 日本語トリガー: 「Web性能監査」「パフォーマンス監査」「表示速度を診て」。
 ---
 
 `/webperf` targets web applications specifically. Do not use it for utility libraries, CLIs, or server-only code with no browser-facing output.

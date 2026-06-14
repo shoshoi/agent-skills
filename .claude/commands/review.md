@@ -1,5 +1,5 @@
 ---
-description: Conduct a five-axis code review — correctness, readability, architecture, security, performance
+description: Conduct a five-axis code review — correctness, readability, architecture, security, performance 日本語トリガー: 「コードレビュー」「5観点でレビュー」「PRを見て」。
 ---
 
 Invoke the agent-skills:code-review-and-quality skill.

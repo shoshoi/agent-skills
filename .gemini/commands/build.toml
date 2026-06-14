@@ -1,6 +1,8 @@
-description = "Implement tasks incrementally — build, test, verify, commit. Add \"auto\" to run the whole plan in one approved pass."
+description = "Implement tasks incrementally — build, test, verify, commit. Add \ 日本語トリガー: 「実装して」「段階的にビルド」「タスクを進めて」などの依頼時。"auto\" to run the whole plan in one approved pass."
 
 prompt = """
+ユーザーには日本語で応答してください（コードや識別子は元の言語のまま）。
+
 Invoke the incremental-implementation skill alongside test-driven-development.
 
 ## Modes

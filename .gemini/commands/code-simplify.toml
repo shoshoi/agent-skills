@@ -1,6 +1,8 @@
-description = "Simplify code for clarity and maintainability — reduce complexity without changing behavior"
+description = "Simplify code for clarity and maintainability — reduce complexity without changing behavior 日本語トリガー: 「コードを簡潔に」「リファクタリング」「読みやすくして」などの依頼時。"
 
 prompt = """
+ユーザーには日本語で応答してください（コードや識別子は元の言語のまま）。
+
 Invoke the code-simplification skill.
 
 Simplify recently changed code (or the specified scope) while preserving exact behavior:

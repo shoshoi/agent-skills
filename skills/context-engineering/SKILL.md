@@ -1,6 +1,6 @@
 ---
 name: context-engineering
-description: Optimizes agent context setup. Use when starting a new session, when agent output quality degrades, when switching between tasks, or when you need to configure rules files and context for a project.
+description: Optimizes agent context setup. Use when starting a new session, when agent output quality degrades, when switching between tasks, or when you need to configure rules files and context for a project. 日本語トリガー: 「コンテキスト設定」「ルールファイル整備」「セッション開始」「出力品質が落ちた」などの依頼時。
 ---
 
 # Context Engineering

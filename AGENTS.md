@@ -2,6 +2,12 @@
 
 This file provides guidance to AI coding agents (Claude Code, Cursor, Copilot, Antigravity, etc.) when working with code in this repository.
 
+## Language / 言語
+
+**Respond to the user in Japanese (日本語) by default.** All user-facing output (explanations, questions, summaries, status updates, confirmations) must be in Japanese, regardless of the language the user writes in. Skill content, code, identifiers, paths, and commit messages stay in their original language. If the user explicitly requests another language, follow that for the rest of the session.
+
+ユーザー向けの出力は既定で日本語にします。スキル本文・コード・識別子・パス・コミットメッセージは元の言語のままで構いません。ユーザーが明示的に他言語を希望した場合はそれに従います。
+
 ## Repository Overview
 
 A collection of skills for Claude.ai and Claude Code for senior software engineers. Skills are packaged instructions and scripts that extend Claude and your coding agents capabilities.

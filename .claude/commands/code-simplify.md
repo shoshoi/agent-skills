@@ -1,5 +1,5 @@
 ---
-description: Simplify code for clarity and maintainability — reduce complexity without changing behavior
+description: Simplify code for clarity and maintainability — reduce complexity without changing behavior 日本語トリガー: 「コードを簡潔に」「リファクタリング」「読みやすくして」。
 ---
 
 Invoke the agent-skills:code-simplification skill.

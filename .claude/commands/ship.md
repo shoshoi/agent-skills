@@ -1,5 +1,5 @@
 ---
-description: Run the pre-launch checklist via parallel fan-out to specialist personas, then synthesize a go/no-go decision
+description: Run the pre-launch checklist via parallel fan-out to specialist personas, then synthesize a go/no-go decision 日本語トリガー: 「リリース前チェック」「ローンチ判定」「出荷可否」。
 ---
 
 Invoke the agent-skills:shipping-and-launch skill.

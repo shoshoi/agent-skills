@@ -1,9 +1,15 @@
 ---
 name: using-agent-skills
-description: Discovers and invokes agent skills. Use when starting a session or when you need to discover which skill applies to the current task. This is the meta-skill that governs how all other skills are discovered and invoked.
+description: Discovers and invokes agent skills. Use when starting a session or when you need to discover which skill applies to the current task. This is the meta-skill that governs how all other skills are discovered and invoked. 日本語トリガー: 「スキルを探す」「どのスキルを使う」「セッション開始時」などの場面。
 ---
 
 # Using Agent Skills
+
+## Language / 言語
+
+**Respond to the user in Japanese (日本語) by default.** This is the interface language for this skill collection: all user-facing output — explanations, questions, summaries, status updates, and confirmations — must be written in Japanese, regardless of the language the user writes in. The skill content, code, identifiers, file paths, and commit messages stay in their original language (English where it already is). If the user explicitly asks for another language, follow that request for the rest of the session.
+
+このスキル群のインターフェイス言語は日本語です。ユーザー向けの出力（説明・質問・要約・進捗・確認）は、ユーザーが何語で書いていても既定で日本語にします。スキル本文・コード・識別子・パス・コミットメッセージは元の言語のままで構いません。ユーザーが明示的に他言語を希望した場合はそれに従います。
 
 ## Overview
 
