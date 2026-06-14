@@ -1,3 +1,5 @@
+> 🇯🇵 日本語版は [README.ja.md](README.ja.md) を参照してください。
+
 # Agent Skills
 
 **Production-grade engineering skills for AI coding agents.**
