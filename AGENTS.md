@@ -18,10 +18,10 @@ OpenCode uses a **skill-driven execution model** powered by the `skill` tool and
 
 ### Core Rules
 
-- If a task matches a skill, you MUST invoke it
+- If a task matches a skill, invoke it
 - Skills are located in `skills/<skill-name>/SKILL.md`
-- Never implement directly if a skill applies
-- Always follow the skill instructions exactly (do not partially apply them)
+- Complete a matching skill's required steps before implementing, so the spec and plan exist when the code is written
+- Follow the skill's workflow through its verification steps
 
 ### Intent → Skill Mapping
 
@@ -37,7 +37,7 @@ The agent should automatically map user intent to skills:
 
 ### Lifecycle Mapping (Implicit Commands)
 
-OpenCode does not support slash commands like `/spec` or `/plan`.
+This OpenCode integration does not use slash commands like `/spec` or `/plan`.
 
 Instead, the agent must internally follow this lifecycle:
 
@@ -52,22 +52,10 @@ Instead, the agent must internally follow this lifecycle:
 
 For every request:
 
-1. Determine if any skill applies (even 1% chance)
+1. Determine whether a skill applies
 2. Invoke the appropriate skill using the `skill` tool
 3. Follow the skill workflow strictly
 4. Only proceed to implementation after required steps (spec, plan, etc.) are complete
-
-### Anti-Rationalization
-
-The following thoughts are incorrect and must be ignored:
-
-- "This is too small for a skill"
-- "I can just quickly implement this"
-- "I’ll gather context first"
-
-Correct behavior:
-
-- Always check for and use skills first
 
 This ensures OpenCode behaves similarly to Claude Code with full workflow enforcement.
 
@@ -95,9 +83,8 @@ See [agents/README.md](agents/README.md) for the decision matrix and [references
 skills/
   {skill-name}/           # kebab-case directory name
     SKILL.md              # Required: skill definition
-    scripts/              # Required: executable scripts
+    scripts/              # Optional: only when the skill ships runnable helpers
       {script-name}.sh    # Bash scripts (preferred)
-  {skill-name}.zip        # Required: packaged for distribution
 ```
 
 ### Naming Conventions
@@ -105,7 +92,6 @@ skills/
 - **Skill directory**: `kebab-case` (e.g. `web-quality`)
 - **SKILL.md**: Always uppercase, always this exact filename
 - **Scripts**: `kebab-case.sh` (e.g., `deploy.sh`, `fetch-logs.sh`)
-- **Zip file**: Must match directory name exactly: `{skill-name}.zip`
 
 ### SKILL.md Format
 
@@ -117,39 +103,29 @@ description: {One sentence describing what the skill does, followed by one or mo
 
 # {Skill Title}
 
+## Overview
+
 {Brief overview of what the skill does and why it matters.}
 
-## How It Works
+## When to Use
 
-{Numbered list explaining the skill's workflow}
+{Trigger conditions, and when not to use the skill.}
 
-Equivalent headings like `Workflow`, `Core Process`, or `When to Use` are fine when they communicate the same structure clearly.
+## Core Process
 
-## Usage (Optional)
+{The skill's workflow. Equivalent headings like `How It Works` or `Workflow` are fine.}
 
-Include this section only if the skill ships runnable helpers under `scripts/`. Markdown-only skills can omit both the section and the directory entirely.
+## Common Rationalizations
 
-```bash
-bash /mnt/skills/user/{skill-name}/scripts/{script}.sh [args]
-```
+{Excuses for skipping the process, and why each is wrong.}
 
-**Arguments:**
-- `arg1` - Description (defaults to X)
+## Red Flags
 
-**Examples:**
-{Show 2-3 common usage patterns}
+{Signs the skill is being misapplied.}
 
-## Output
+## Verification
 
-{Show example output users will see}
-
-## Present Results to User
-
-{Template for how Claude should format results when presenting to users}
-
-## Troubleshooting
-
-{Common issues and solutions, especially network/permissions errors}
+{How to confirm the work is done. `docs/skill-anatomy.md` describes each section, and `node scripts/validate-skills.js` checks them.}
 ```
 
 ### Best Practices for Context Efficiency
@@ -170,15 +146,6 @@ Skills are loaded on-demand — only the skill name and description are loaded a
 - Write machine-readable output (JSON) to stdout
 - Include a cleanup trap for temp files
 - Reference the script path as `/mnt/skills/user/{skill-name}/scripts/{script}.sh`
-
-### Creating the Zip Package
-
-After creating or updating a skill:
-
-```bash
-cd skills
-zip -r {skill-name}.zip {skill-name}/
-```
 
 ### End-User Installation
 
