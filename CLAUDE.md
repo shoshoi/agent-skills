@@ -34,7 +34,7 @@ docs/         → Setup guides for different tools
 ## Commands
 
 - `npm test` — Not applicable (this is a documentation project)
-- Validate: Check that all SKILL.md files have valid YAML frontmatter with name and description
+- Validate: `node scripts/validate-skills.js` (CI runs the same check)
 
 ## Boundaries
 
